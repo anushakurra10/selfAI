@@ -1,10 +1,11 @@
 import requests
 import re
 from datetime import datetime
+import traceback
 
 def handle_exception(self, e):
         print("Error in chat function:", e)
-        
+        traceback.print_exc() 
         # If we don't have contact recorded yet, ask the UI to open the form
         if not self.details_recorded:
             self.error_contact = True
