@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import os
 
-def push(message: str):
+def send_push(message: str):
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     message = f"[{timestamp}] {message}"
     try:
@@ -19,11 +19,4 @@ def push(message: str):
         # Don't crash UI if push fails
         pass
 
-# === Tool Functions ===
-def record_user_details(email, phone, notes=""):
-    push(f"Recording user: Email: {email} | Phone: {phone} | Notes: {notes}")
-    return {"recorded": "ok"}
 
-def record_unknown_question(question):
-    push(f"Unanswered question recorded: {question}")
-    return {"recorded": "ok"}

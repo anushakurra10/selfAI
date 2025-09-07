@@ -9,6 +9,7 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "jupytext (>=1.17.2,<2.0.0)",
     "gradio>=5.42.0",
+    "mailersend>=2.0.0",
 ]
 
 [author]

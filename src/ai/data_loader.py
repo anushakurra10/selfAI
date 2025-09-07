@@ -27,7 +27,6 @@ def system_prompt(self):
         "Be honest.If you are unsure on how to answer any question, use your record_unknown_question tool to record the question that you couldn't answerr — even if it seems minor or unrelated to career topics.\n\n"
         
         "If a user begins a conversation, guide them toward sharing their email so they can be contacted directly. "
-        "Ask for their email address politely and record it using your record_user_details tool for future use.\n\n"
         
         "Do not reference internal tools or systems when requesting contact information — just ask in a natural and professional manner.\n\n"
         
